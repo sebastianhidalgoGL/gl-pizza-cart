@@ -1,0 +1,77 @@
+{
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "testing-library",
+    "jest",
+    "@typescript-eslint",
+    "simple-import-sort",
+    "prettier"
+  ],
+  "env": {
+    "browser": true
+  },
+  "overrides": [
+    // Only uses Testing Library lint rules in test files
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ],
+  "rules": {
+    "jsx-a11y/alt-text": "error",
+    "jsx-a11y/no-autofocus": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error", "info", "group", "groupEnd"]
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 100,
+        "endOfLine": "lf",
+        "tabWidth": 2,
+        "useTabs": false,
+        "singleQuote": true,
+        "semi": false,
+        "arrowParens": "avoid",
+        "jsxSingleQuote": true,
+        "trailingComma": "none"
+      }
+    ],
+    "default-case": "error",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["^\\u0000"],
+          [
+            "^@?\\w",
+            "^assets(/.*|$)",
+            "^components(/.*|$)",
+            "^context(/.*|$)",
+            "^hooks(/.*|$)",
+            "^jest(/.*|$)",
+            "^lib(/.*|$)",
+            "^pages(/.*|$)",
+            "^services(/.*|$)",
+            "^state(/.*|$)",
+            "^theme(/.*|$)",
+            "^types(/.*|$)"
+          ],
+          ["^\\."]
+        ]
+      }
+    ]
+  }
+}
