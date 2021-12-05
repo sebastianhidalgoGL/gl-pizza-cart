@@ -4,8 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-Node_modules
-Npm-debug.log
+
 
 # testing
 /coverage
@@ -35,7 +34,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-#Docker 
-Dockerfile
-.dockerignore
 
