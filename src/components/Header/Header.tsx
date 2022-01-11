@@ -22,7 +22,7 @@ const Header = () => {
         <HeaderItem title='Contact' />
         <HeaderItem title='Login / Sing up' />
         <HeaderItem title='Help' />
-        <CartIcon hoover='#F2C94C' />
+        <CartIcon hoover={true} />
       </div>
     </header>
   )
