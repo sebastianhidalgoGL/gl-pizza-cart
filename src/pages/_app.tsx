@@ -3,9 +3,7 @@ import '../styles/tailwind.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 
-import Footer from '../components/Footer/Footer'
-import Header from '../components/Header/Header'
-
+import Layout from '../components/Layout/Layout'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -13,14 +11,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>The Good Pizza Club </title>
         <link rel='icon' href='/pizzaClubLogo.svg' />
       </Head>
-
-      <Header />
-
-      <Component {...pageProps} />
-
-      <Footer />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }
-
 export default MyApp

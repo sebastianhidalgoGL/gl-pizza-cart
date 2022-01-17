@@ -1,14 +1,20 @@
-import React, { ReactElement } from 'react'
+import Link from 'next/link'
+import { ReactElement } from 'react'
 
 interface Props {
-  title: String
+  title?: string
+  Icon?: any
+  navigateTo: string
 }
 
-function HeaderItem({ title }: Props): ReactElement {
+function HeaderItem({ title, Icon, navigateTo }: Props): ReactElement {
   return (
-    <div className='cursor-pointer'>
-      <p className='text-[24px] hover:text-[#F2C94C] hover:font-bold'>{title}</p>
-    </div>
+    <Link href={navigateTo} passHref>
+      <div className='cursor-pointer'>
+        {title && <p className='text-[24px] hover:text-[#F2C94C]'>{title}</p>}
+        {Icon && <Icon hoover={true} />}
+      </div>
+    </Link>
   )
 }
 
