@@ -1,5 +1,10 @@
+import Banner from '../../components/Banner/Banner'
+
 export default function Menu({}) {
+  const backgroundImage = '/menuBanner.png'
   return (
-    <div className='flex flex-col items-center justify-center h-[200vh] py-2 bg-blue-700 '></div>
+    <div className='flex flex-col h-[170vh]  '>
+      <Banner background={backgroundImage}></Banner>
+    </div>
   )
 }

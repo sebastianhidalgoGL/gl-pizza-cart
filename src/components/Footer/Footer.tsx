@@ -11,13 +11,17 @@ import {
 } from '../Icons/SocialNetworks'
 import Subscribe from './Subscribe/Subscribe'
 
-function Footer(): ReactElement {
+type FooterProps = {
+  welcomeBox?: boolean
+}
+
+function Footer({ welcomeBox = false }: FooterProps): ReactElement {
   return (
     <footer
       className='bg-[#F2994A] h-[451px] w-100 inset-x-0 bottom-0 p-4 absolute 
     rounded-tr-[367.5px] '
     >
-      <Subscribe />
+      {welcomeBox && <Subscribe />}
       <div className='flex flex-row gap-32 h-[350px] w-11/12 pt-[103px] pl-[102px]'>
         <div className=' basis-1/3 flex flex-col gap-3 items-baseline'>
           <Link href={'/'} passHref>
@@ -88,28 +92,28 @@ function Footer(): ReactElement {
                 width='101'
                 height='101'
                 className='mr-[100px] cursor-pointer'
-              />{' '}
+              />
               <Image
                 src='/pizzaSquare3.png'
                 alt='Pizza Club Logo'
                 width='101'
                 height='101'
                 className='mr-[100px] cursor-pointer'
-              />{' '}
+              />
               <Image
                 src='/pizzaSquare4.png'
                 alt='Pizza Club Logo'
                 width='101'
                 height='101'
                 className='mr-[100px] cursor-pointer'
-              />{' '}
+              />
               <Image
                 src='/pizzaSquare5.png'
                 alt='Pizza Club Logo'
                 width='101'
                 height='101'
                 className='mr-[100px] cursor-pointer'
-              />{' '}
+              />
               <Image
                 src='/pizzaSquare6.png'
                 alt='Pizza Club Logo'
