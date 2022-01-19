@@ -1,5 +1,10 @@
+import Banner from '../../components/Banner/Banner'
+
 export default function Welcome({}) {
+  const backgroundImage = '/welcomeBanner.png'
   return (
-    <div className='flex flex-col items-center justify-center h-[100vh] py-2 bg-yellow-300 '></div>
+    <div className='flex flex-col h-[170vh]  '>
+      <Banner background={backgroundImage} size={Banner.size.HALF}></Banner>
+    </div>
   )
 }
