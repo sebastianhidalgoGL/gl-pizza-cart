@@ -76,42 +76,42 @@ function Footer(): ReactElement {
             <h4 className='text-[24px]'>Our Feed</h4>
             <div className='text-[24px] grid grid-cols-3 grid-flow-row gap-2 '>
               <Image
-                src='/feed1.png'
+                src='/pizzaSquare1.png'
                 alt='Pizza Club Logo'
                 width='101'
                 height='101'
                 className='mr-[100px] cursor-pointer'
               />
               <Image
-                src='/feed2.png'
+                src='/pizzaSquare2.png'
                 alt='Pizza Club Logo'
                 width='101'
                 height='101'
                 className='mr-[100px] cursor-pointer'
               />{' '}
               <Image
-                src='/feed3.png'
+                src='/pizzaSquare3.png'
                 alt='Pizza Club Logo'
                 width='101'
                 height='101'
                 className='mr-[100px] cursor-pointer'
               />{' '}
               <Image
-                src='/feed4.png'
+                src='/pizzaSquare4.png'
                 alt='Pizza Club Logo'
                 width='101'
                 height='101'
                 className='mr-[100px] cursor-pointer'
               />{' '}
               <Image
-                src='/feed5.png'
+                src='/pizzaSquare5.png'
                 alt='Pizza Club Logo'
                 width='101'
                 height='101'
                 className='mr-[100px] cursor-pointer'
               />{' '}
               <Image
-                src='/feed6.png'
+                src='/pizzaSquare6.png'
                 alt='Pizza Club Logo'
                 width='101'
                 height='101'
